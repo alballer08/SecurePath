@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SecurePath - Threats</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" type="image/png" href="shield-lock.png">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">SecurePath</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item mr-sm-3">
+          <a class="nav-link" href="cia_triad.html">CIA Triad</a>
+        </li>
+        <li class="nav-item mr-sm-3">
+          <a class="nav-link" href="data_states.html">Data States</a>
+        </li>
+        <li class="nav-item mr-sm-3">
+          <a class="nav-link" href="authentication_types.html">Authentication Types</a>
+        </li>
+        <li class="nav-item mr-sm-3">
+          <a class="nav-link" href="passwords.html">Passwords</a>
+        </li>
+        <li class="nav-item mr-sm-3">
+          <a class="nav-link" href="phishing.html">Phishing</a>
+        </li>
+        <li class="nav-item mr-sm-3">
+          <a class="nav-link" href="threats.html">Threats</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0" onsubmit="return searchSite(event)">
+        <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <section id="welcome">
+    <div class="container text-center">
+      <h1>
+        Potential Threats
+      </h1>
+    </div>
+  </section>
+
+  <section id="information">
+    <div class="container-img row">
+      <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+        <a href="https://www.future-processing.com/blog/cybersecurity-in-the-financial-sector-how-to-prevent-potential-threats/" target="_blank">
+          <!-- Replace with your desired URL -->
+          <img src="threats.png" class="img-fluid" width="400" height="400" alt="">
+        </a>
+        <p class="mt-2">Image from <u>Future Processing</u></p>
+      </div>
+      <div class="col-lg-6 d-flex justify-content-center align-items-center">
+        <div class="rightSection-about text-center">
+          <h1>Potential Threats</h1>
+          <br><br>
+          <b>Malware</b>: Malicious software designed to damage or break computer systems
+          <br><br>
+          <b>Business Email Compromise (BEC)</b>: A sophisticated scam that uses email fraud to trick companies into sending money or sensitive data to criminals
+          <br><br>
+          <b>Insider Threats</b>: Can include violence, espionage, sabotage, theft, and cyber acts 
+          <br><br>
+          <b>Poor Cyber Hygiene</b>: Using unsafe WiFi networks or personal devices to access systems can increase the risk of exposure to breaches 
+          <br><br>
+          <b>Internet of Things (IoT)</b>: Poorly secured IoT devices can provide attackers with a way in 
+          <br><br>
+          Information from the <a href="https://onlinedegrees.sandiego.edu/top-cyber-security-threats/" target="_blank"><u>University of San Diego</u></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+  <footer style="text-align: center; padding: 10px; background-color: #f1f1f1; position: fixed; bottom: 0; width: 100%;">
+    &copy; <span id="year"></span> SecurePath. All rights reserved.
+  </footer>
+
+</html>

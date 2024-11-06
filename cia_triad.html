@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SecurePath - Cia Triad</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" type="image/png" href="shield-lock.png">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">SecurePath</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item mr-sm-3">
+          <a class="nav-link" href="cia_triad.html">CIA Triad</a>
+        </li>
+        <li class="nav-item mr-sm-3">
+          <a class="nav-link" href="data_states.html">Data States</a>
+        </li>
+        <li class="nav-item mr-sm-3">
+          <a class="nav-link" href="authentication_types.html">Authentication Types</a>
+        </li>
+        <li class="nav-item mr-sm-3">
+          <a class="nav-link" href="passwords.html">Passwords</a>
+        </li>
+        <li class="nav-item mr-sm-3">
+          <a class="nav-link" href="phishing.html">Phishing</a>
+        </li>
+        <li class="nav-item mr-sm-3">
+          <a class="nav-link" href="threats.html">Threats</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0" onsubmit="return searchSite(event)">
+        <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <section id="welcome">
+    <div class="container text-center">
+        <h1>
+            CIA Triad
+        </h1>
+    </div>
+  </section>
+
+  <section id="information">
+    <div class="container-img row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+          <a href="https://www.stationx.net/what-is-the-cia-triad/" target="_blank"> <!-- Replace with your desired URL -->
+            <img src="cia_triad.png" class="img-fluid" width="400" height="400" alt="">
+        </a>
+          <p class="mt-2">Image from <u>StationX</u></p>
+      </div>
+        <div class="col-lg-6 d-flex justify-content-center align-items-center">
+            <div class="rightSection-about text-center">
+                <h1>CIA = Goal of Network Security</h1>
+                <br><br>
+                <b>Confidentiality</b> - Data is not revealed
+                <br><br>
+                <b>Integrity</b> - Data is intact, not modified or corrupted
+                <br><br>
+                <b>Accesibility</b> - Data is accessible to allowed users
+                <br><br>
+                Information from <u>Cyber.org</u>
+<br><br>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="info-confidentiality">
+  <div class="info-section">
+    <h1 class="section-title">Confidentiality</h1>
+    <div class="info-box">
+        <p>Protection against unauthorized attacks</p>
+    </div>
+    <img src="confidentiality.png" alt="confidentiality-example" class="section-image">
+    Image and information from <u>Cyber.org</u>
+  </div>  
+</section>
+
+<section id="info-integrity" style="background-color: rgb(243, 238, 238);">
+  <div class="info-section">
+    <h1 class="section-title">Integrity</h1>
+    <div class="info-box">
+        <p>Protection against unauthorized modification</p>
+    </div>
+    <img src="integrity.png" alt="integrity-example" class="section-image">
+    Image and information from <u>Cyber.org</u>
+  </div>  
+</section>
+
+<section id="info-accessibility">
+  <div class="info-section">
+    <h1 class="section-title">Accessibility</h1>
+    <div class="info-box">
+        <p>Protection against denial of service</p>
+    </div>
+    <img src="accessibility.png" alt="accessibility" class="section-image">
+    Image and information from <u>Cyber.org</u>
+  </div>  
+</section>
+
+
+</body>
+
+<footer style="text-align: center; padding: 10px; background-color: #f1f1f1; position: fixed; bottom: 0; width: 100%;">
+  &copy; <span id="year"></span> SecurePath. All rights reserved.
+</footer>
+
+</html>

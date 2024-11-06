@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SecurePath - Phishing</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="shield-lock.png">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">SecurePath</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item mr-sm-3">
+          <a class="nav-link" href="cia_triad.html">CIA Triad</a>
+        </li>
+        <li class="nav-item mr-sm-3">
+          <a class="nav-link" href="data_states.html">Data States</a>
+        </li>
+        <li class="nav-item mr-sm-3">
+          <a class="nav-link" href="authentication_types.html">Authentication Types</a>
+        </li>
+        <li class="nav-item mr-sm-3">
+          <a class="nav-link" href="passwords.html">Passwords</a>
+        </li>
+        <li class="nav-item mr-sm-3">
+          <a class="nav-link" href="phishing.html">Phishing</a>
+        </li>
+        <li class="nav-item mr-sm-3">
+          <a class="nav-link" href="threats.html">Threats</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0" onsubmit="return searchSite(event)">
+        <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <section id="welcome">
+    <div class="container text-center">
+      <h1>
+        Phishing
+      </h1>
+    </div>
+  </section>
+
+  <section id="information">
+    <div class="container-img row">
+      <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+        <a href="https://vipre.com/glossary-terms/what-is-spear-phishing/" target="_blank">
+          <!-- Replace with your desired URL -->
+          <img src="phishing.png" class="img-fluid" width="400" height="400" alt="">
+        </a>
+        <p class="mt-2">Image from <u>Vipre</u></p>
+      </div>
+      <div class="col-lg-6 d-flex justify-content-center align-items-center">
+        <div class="rightSection-about text-center">
+          <h1>Phishing - Scam Emails</h1>
+          <br><br>
+          Phishing is when attackers send scam emails (or text messages) that contain links to malicious websites.
+          <br><br>
+          The websites may contain malware (such as ransomware) which can sabotage systems and organisations.
+          <br><br>
+          Information from <a href="https://www.ncsc.gov.uk/guidance/phishing" target="_blank"><u>National Cybersecurity
+              Center</u></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="info-example">
+    <div class="container">
+      <div class="row align-items-center" style="height: 100vh;"> <!-- Set the height to full viewport height -->
+        <div class="info-box-pass col-lg-6 d-flex flex-column justify-content-center ">
+          <h1 class="section-title">Recognize and Report Phishing</h1>
+          <p>Step #1 - <u>Recognize</u> - Look for these common signs:
+            <br>
+            <li>Urgent or emotionally appealing language, especially messages that claim dire consequences for not
+              responding immediately</li>
+            <li> Requests to send personal and financial information</li>
+            <li>Untrusted shortened URLs</li>
+            <li>Incorrect email addresses or links, like amazan.com</li>
+            <li>A common sign used to be poor grammar or misspellings although in the era of artificial intelligence
+              (AI)
+              some emails will now have perfect grammar and spelling, so look out for the other signs.</li>
+          </p>
+          <p>Step #2 - <u>Report</u><br>
+            <li>If you suspect phishing, resist the temptation to click on links or attachments that seem too good to be
+              true and may be trying to access your personal information.</li> 
+            <li>Instead, report the phish to protect yourself
+            and others. </li>
+            <li>Typically, you’ll find options to report near the person’s email address or username. You can
+              also report via the “report spam” button in the toolbar or settings.</li></p>
+              <br>
+              <p>Information from <a href="https://www.ncsc.gov.uk/guidance/phishing" target="_blank"><u>Cisa.gov</u></a></p>
+        </div>
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+          <a href="https://infosec.ucf.edu/awareness/phishing/" target="_blank">
+            <!-- Replace with your desired URL -->
+            <img src="phishingreport.png" class="img-fluid" width="400" height="400" alt="">
+          </a>
+          <p class="mt-2">Image from the <u>University of Central Florida</u></p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+<footer style="text-align: center; padding: 10px; background-color: #f1f1f1; position: fixed; bottom: 0; width: 100%;">
+  &copy; <span id="year"></span> SecurePath. All rights reserved.
+</footer>
+
+</html>

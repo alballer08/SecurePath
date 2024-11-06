@@ -1,0 +1,130 @@
+/* Ensure no horizontal overflow */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+#welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Flex container settings for the information section */
+.container-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+/* Column styles for responsive design */
+.col-lg-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%; /* Full width for better control */
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Text container styling */
+.rightSection-about {
+    max-width: 90%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 20px;
+}
+
+#welcome {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;     /* Vertically center */
+    height: 100vh;          /* Full viewport height */
+}
+
+#information{
+    height: 100vh;
+    background-color: rgb(243, 238, 238);
+}
+
+.container {
+    text-align: center;      /* Center text inside the container */
+}
+
+.active{
+    color:rgba(252, 150, 255, 0.821) !important;
+}
+
+.rightSection-about {
+    max-width: 90%; /* Control the text width */
+    text-align: center; /* Center text within the div */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+#information .container-img {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    height: 100%; /* Ensure the container takes the full height */
+}
+
+/* Styling for the information section */
+#information {
+    background-color: rgb(243, 238, 238);
+    padding: 20px 0; /* Add padding to prevent content from touching section edges */
+}
+
+
+@media (max-width: 992px) {
+    .rightSection-about {
+        font-size: 0.75rem;
+        padding: 10px;
+    }
+
+    .img-fluid {
+        width: 50%; /* Further scaling for very small screens */
+    }
+}
+
+#info-integrity,#info-confidentiality,#info-accessibility{
+    height:100vh;
+}
+
+.info-section {
+    display: flex;              /* Use flexbox for the layout */
+    flex-direction: column;     /* Stack items vertically */
+    align-items: center;        /* Center items horizontally */
+    padding: 30px;              /* Margin around the section */
+}
+
+.section-image{
+    max-width: 100%;           /* Make the image responsive */
+    height: auto;              /* Maintain aspect ratio */
+    margin-top: 15px;    
+}
+
+
